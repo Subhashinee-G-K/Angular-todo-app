@@ -7,9 +7,12 @@ Here’s a sample `README.md` file for your **Angular and Firestore To-Do App**:
 A simple and intuitive To-Do application built with **Angular** and **Firestore**. This app allows users to create, update, delete, and manage tasks in real time using Firestore's powerful cloud database.
 
 ## Features
-- Add, update, and delete tasks in real time.
-- Persistent data storage with Firestore.
-- Responsive and modern UI using Angular.
+- Add new tasks with title.
+- Mark tasks as complete or incomplete.
+- Delete tasks from the list.
+- Set task priority (High, Medium, Low).
+- Persistent data storage with Firebase Firestore.
+- Responsive UI using Angular Material.
 - Built for learning Angular and Firebase integration.
 
 ## Demo

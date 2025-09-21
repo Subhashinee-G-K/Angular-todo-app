@@ -13,8 +13,9 @@ A simple and intuitive To-Do application built with **Angular** and **Firestore*
 - Built for learning Angular and Firebase integration.
 
 ## Demo
-![image](https://github.com/user-attachments/assets/3add1e33-b498-475e-8547-f50140892d63)
-![image](https://github.com/user-attachments/assets/299c7072-faaa-4118-a641-d8bf51186c49)
+<img width="1911" height="894" alt="image" src="https://github.com/user-attachments/assets/e633dc03-5f15-4fda-bcf1-55cb7b3a1f5d" />
+<img width="1912" height="888" alt="image" src="https://github.com/user-attachments/assets/7af31c32-a491-422e-9b49-9e605f712393" />
+
 
 
 ## Prerequisites
@@ -26,8 +27,8 @@ Follow these steps to set up the project locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/tech-design-pilot/angular-firestore-todo-app.git
-cd angular-firestore-todo-app
+git clone https://github.com/Subhashinee-G-K/Angular-todo-app.git
+cd Angular-todo-app
 ```
 
 ### 2. Install Dependencies
@@ -67,12 +68,5 @@ Open [http://localhost:4200](http://localhost:4200) to see the app in action.
 - **Firebase Firestore**: Real-time database.
 - **AngularFire**: Firebase integration for Angular.
 
-## Contributing
-Contributions are welcome! Feel free to submit a pull request or report issues.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
 
 Replace placeholders like `your-username` and `your-app-id` with actual values.

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include your stylesheets and Angular Material here -->
+</head>
+<body>
+  <div class="app-bg">
+    <div class="container">
+      <h1>To-Do List</h1>
+
+      <div class="todo-list-container mat-elevation-z3 p-3">
+        <div class="todo-item-container mat-elevation-z2 p-2 d-flex gap-2" *ngFor="let item of todoList">
+          
+          <mat-icon *ngIf="!item.completed" role="button" (click)="markAsCompleted(item)">
+            radio_button_unchecked
+          </mat-icon>
+          <mat-icon *ngIf="item.completed" class="text-primary" role="button" (click)="markAsInCompleted(item)">
+            check_circle
+          </mat-icon>
+
+          <div class="todo-info">
+            <p class="mb-1 fw-bold" [ngClass]="{'completed-todo': item.completed}">
+              {{item.title}}
+            </p>
+            <small>
+              Due: {{item.dueDate | date:'medium'}} |
+              Priority:
+              <span class="badge rounded-pill"
+                    [ngClass]="{
+                      'bg-danger': item.priority === 'High',
+                      'bg-success': item.priority === 'Medium',
+                      'bg-primary': item.priority === 'Low'
+                    }">
+                {{item.priority}}
+              </span>
+            </small>
+          </div>
+
+          <button mat-icon-button class="ms-auto text-danger" (click)="deleteTodo(item)">
+            <mat-icon>highlight_off</mat-icon>
+          </button>
+
+        </div>
+
+        <p *ngIf="todoList.length === 0" class="text-muted text-center mt-3">
+          No To-Dos yet!
+        </p>
+      </div>
+
+      <button mat-fab class="add-todo-button" (click)="addNewTodo()">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
